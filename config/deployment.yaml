@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nasaapp
+  name: myapp
 spec:
   selector:
     matchLabels:
-      app: nasaapp
+      app: myapp
   replicas: 2
   template:
     metadata:
       labels:
-        app: nasapp
+        app: myapp
     spec:
       containers:
-      - name: nasaapp
+      - name: myapp
         image: ndeta100/nasa_project:latest
         ports:
         - containerPort: 8080
