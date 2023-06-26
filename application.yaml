@@ -12,7 +12,7 @@ spec:
     path: config
   destination:
     server: https://kubernetes.default.svc
-    namespace: nasaapp
+    namespace: myapp
 
   syncPolicy:
     syncOptions:
